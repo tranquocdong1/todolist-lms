@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Todo List</h1>
+    <div id="auth-section">
+      <h2>Đăng nhập/Đăng ký</h2>
+      <form id="auth-form">
+        <input type="text" id="username" placeholder="Tên người dùng" required>
+        <input type="password" id="password" placeholder="Mật khẩu" required>
+        <button type="submit" id="register-btn">Đăng ký</button>
+        <button type="submit" id="login-btn">Đăng nhập</button>
+      </form>
+    </div>
+    <div id="todo-section" style="display: none;">
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Thêm công việc mới" required>
+        <button type="submit">Thêm Todo</button>
+      </form>
+      <ul id="todo-list"></ul>
+      <button id="logout-btn" style="margin-top: 10px;">Logout</button>
+    </div>
+  </div>
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
